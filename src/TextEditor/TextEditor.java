@@ -7,7 +7,7 @@ public class TextEditor extends JFrame {
 
     private JTextArea textArea;
     private JScrollPane scrollPane;
-    private MenuBarGenerator menuBarGenerator; // Nouvelle classe
+    private MenuBarGenerator menuBarGenerator;
 
     public TextEditor() {
         setTitle("Text Editor");
@@ -22,7 +22,7 @@ public class TextEditor extends JFrame {
         scrollPane = new JScrollPane(textArea);
         add(scrollPane, BorderLayout.CENTER);
 
-        menuBarGenerator = new MenuBarGenerator(this, textArea); // Initialisation
+        menuBarGenerator = new MenuBarGenerator(this, textArea);
         menuBarGenerator.generateMenuBar();
     }
 
